@@ -1,15 +1,16 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render 
+from django.http import HttpResponse
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, "main/home.html")
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, "main/about.html")
 
 def projects(request):
-    return render(request, 'projects.html')
+    return render(request, "main/projects.html")
 
 def contact(request):
-    return render(request, 'contact.html')
+    return render(request, "main/contact.html")
 
 # Create your views here.
